@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
+import { classNames } from './helpers/classNames/classNames';
 import { AboutPage } from './pages/about/About.async';
 import { MainPage } from './pages/main/Main.async';
 import './styles/index.scss';
@@ -9,7 +10,7 @@ export const App = () => {
 	const { theme, toggleTheme } = useTheme();
 
 	return (
-		<div className={`app ${theme}`}>
+		<div className={classNames('app', [theme], { active: false, hover: false })}>
 			<Link to={'/'}>Home</Link>
 			<Link to={'/about'}>About</Link>
 
