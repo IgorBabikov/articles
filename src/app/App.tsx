@@ -3,6 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/themeProvider';
 
 import { Navbar } from 'widgets/NavBar';
+import { Sidebar } from 'widgets/Sidebar';
 import { AppRouter } from './providers/route';
 import './styles/index.scss';
 
@@ -13,7 +14,10 @@ export const App = () => {
 		<div className={classNames('app', [theme], {})}>
 			<Navbar />
 
-			<AppRouter />
+			<div className='page'>
+				<Sidebar />
+				<AppRouter />
+			</div>
 		</div>
 	);
 };

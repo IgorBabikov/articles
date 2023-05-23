@@ -1,0 +1,20 @@
+.Sidebar {
+	position: relative;
+	height: calc(100vh - var(--height-nav-bar));
+	background: var(--inverted-bg-color);
+
+	width: var(--width-sidebar-full);
+	transition: width 0.3s ease-in-out;
+}
+
+.themeSwitcher {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+
+	transform: translateX(-50%);
+}
+
+.collapsed {
+	width: var(--width-sidebar-small);
+}
