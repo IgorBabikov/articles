@@ -3,6 +3,11 @@ import webpack from 'webpack';
 import { BuildOption } from './types/config';
 
 export function buildLoaders({ isDev }: BuildOption): webpack.RuleSetRule[] {
+	const svgLoader = {
+		test: /\.svg$/,
+		use: ['@svgr/webpack'],
+	};
+
 	const cssLoader = {
 		test: /\.s[ac]ss$/i,
 		use: [
@@ -28,5 +33,5 @@ export function buildLoaders({ isDev }: BuildOption): webpack.RuleSetRule[] {
 		exclude: /node_modules/,
 	};
 
-	return [typescriptLoader, cssLoader];
+	return [typescriptLoader, cssLoader, svgLoader];
 }
