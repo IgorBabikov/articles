@@ -7,10 +7,12 @@
 	transition: width 0.3s ease-in-out;
 }
 
-.themeSwitcher {
+.switchers {
+	display: flex;
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
+	justify-content: center;
 
 	transform: translateX(-50%);
 }
