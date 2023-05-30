@@ -2,7 +2,6 @@ import { classNames } from 'shared/lib/classNames/classNames';
 
 import { useTheme } from 'app/providers/themeProvider';
 
-import { useEffect } from 'react';
 import { Navbar } from 'widgets/NavBar';
 import { Sidebar } from 'widgets/Sidebar';
 import { AppRouter } from './providers/route';
