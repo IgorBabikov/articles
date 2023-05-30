@@ -5,5 +5,9 @@
 
 	"Cвернуть": "Сollapse",
 
-	"Страница не найдена": "Page not found"
+	"Страница не найдена": "Page not found",
+
+	"Произошла непредвиденная ошибка": "Unexpected error occurred",
+
+	"Перезагрузить страницу": "Reload the page"
 }

@@ -1,6 +1,6 @@
 import { classNames } from './classNames';
 
-describe('sum module', () => {
+describe('classNames', () => {
 	test('width only first para', () => {
 		expect(classNames('someClass')).toBe('someClass');
 	});
