@@ -8,10 +8,10 @@ import { App } from './app/App';
 
 render(
 	<BrowserRouter>
-		<Suspense fallback={''}>
+		<Suspense fallback={'loading'}>
 			<ErrorBoundary>
 				<ThemeProvider>
-					<Suspense fallback={''}>
+					<Suspense fallback={'loading'}>
 						<App />
 					</Suspense>
 				</ThemeProvider>
