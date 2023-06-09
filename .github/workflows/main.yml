@@ -1,6 +1,5 @@
 name: building testing
-on: 
- push:
+on: [push]:
    branches: [master]
  pull_request: [master]
 jobs:
